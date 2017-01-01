@@ -13,13 +13,13 @@
             <h2>Please enter a stock ticker eg. GOOG, and check desired features.
 
 </h2>
-        <form id='celiachenwelcome' method='post' action='celiachengraph' >
+        <form id='celiachenwelcome' method='post' action='graph' >
         <p> Ticker Symbol: <input type='text' name='symbol' /> </p>
             <p>
-            <input type="checkbox" id="closing_price" value={{cb1}}> Closing price<br />
-            <input type="checkbox" id="A_closing_price" value={{c2}}> Adjusted closing Price <br />
-            <input type="checkbox" id="opening_price" value={{c3}}> Opening Price <br/>
-            <input type="checkbox" id="A_opening_price" value={{c4}}> Adjusted Opening Price <br />
+            <input type="checkbox" name="pt" value="cp"> Closing Price<br />
+            <input type="checkbox" name="pt" value="acp"> Adjusted closing Price <br />
+            <input type="checkbox" name="pt" value="op"> Opening Price <br/>
+            <input type="checkbox" name="pt" value="aop"> Adjusted Opening Price <br />
              </p>           
 <p>
    <input type='submit' value='Submit' /> 
