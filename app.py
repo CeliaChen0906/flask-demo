@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 
 import numpy as np
-
+import bokeh.sampledata
 from bokeh.layouts import gridplot
 from bokeh.plotting import figure, show, output_file
 from bokeh.sampledata.stocks import AAPL, GOOG, IBM, MSFT
