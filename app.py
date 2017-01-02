@@ -7,7 +7,7 @@ from bokeh.plotting import figure, show, output_file
 from bokeh.sampledata.stocks import AAPL, GOOG, IBM, MSFT
 from bokeh.resources import CDN
 from bokeh.embed import components
-
+bokeh.sampledata.download()
 
 app = Flask(__name__)
 
