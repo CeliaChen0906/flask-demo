@@ -2,12 +2,13 @@ from flask import Flask, render_template, request, redirect
 
 import numpy as np
 import bokeh.sampledata
+bokeh.sampledata.download()
 from bokeh.layouts import gridplot
 from bokeh.plotting import figure, show, output_file
 from bokeh.sampledata.stocks import AAPL, GOOG, IBM, MSFT
 from bokeh.resources import CDN
 from bokeh.embed import components
-bokeh.sampledata.download()
+
 
 app = Flask(__name__)
 
