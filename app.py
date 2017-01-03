@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, redirect
 
-import numpy as np
 import pandas as pd
 import simplejson as json
 import requests
@@ -35,7 +34,7 @@ def graph():
     col2 = pd.Series(col['name'])
     df = pd.DataFrame(raw['datatable']['data'], columns = col2)
     def datetime(x):
-         return np.array(x, dtype=np.datetime64) 
+         return pd.to_datetime(x) 
         
     p1 = figure(x_axis_type="datetime", title="Stock Prices for " '%s' % (app.vars['name']))
     p1.grid.grid_line_alpha=0.3
